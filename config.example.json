@@ -1,0 +1,24 @@
+{
+  "debug_log": false,
+  "default_client_id": "",
+  "default_presence": {
+    "client_id": "",
+    "elapsed": true,
+    "idle": {
+      "details": "In the menus"
+    },
+    "server": {
+      "details": "Playing multiplayer"
+    }
+  },
+  "disconnect_timeout_ms": 10000,
+  "popup_after_failures": 3,
+  "port": 9514,
+  "retry_interval_ms": 30000,
+  "send_packet_class": "BatchedNetworkPeer",
+  "send_packet_signature": "",
+  "send_packet_vtable_index": 1,
+  "tls": false,
+  "tls_pin_sha256": "",
+  "tls_verify": true
+}

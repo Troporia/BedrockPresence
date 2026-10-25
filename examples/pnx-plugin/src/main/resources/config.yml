@@ -1,0 +1,35 @@
+# TCP port the BedrockPresence client DLL connects to (same host as the game).
+port: 9514
+bind-address: "0.0.0.0"
+
+# Discord application id sent with every activity. Leave empty to use the
+# client's default_client_id. Art assets (large-image) must be uploaded to
+# this application in the Discord developer portal.
+client-id: ""
+large-image: "logo"
+
+# Seconds a client has to send its token through the game connection.
+token-timeout: 60
+
+# Only link a TCP connection to a player from the same IP. Keep this on unless
+# a proxy hides player IPs from this server (then the game connection comes
+# from the proxy's IP while the presence connection comes from the player).
+require-same-ip: true
+
+# Connection limits (a client opens one connection; reconnects replace it).
+max-connections: 500
+max-connections-per-ip: 4
+
+# Seconds an unlinked connection may stay open while no player from its IP is
+# online.
+unlinked-timeout: 300
+
+# Optional TLS. Client config: "tls": true (plus "tls_pin_sha256" for a
+# self-signed certificate). PKCS#12 keystore path relative to the plugin folder.
+tls:
+  enabled: false
+  keystore: "presence.p12"
+  password: "changeit"
+
+# Seconds between example activity refreshes (player count etc.).
+update-interval: 15

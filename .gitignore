@@ -1,0 +1,12 @@
+build/
+dist/
+cmake-build-*/
+.idea/
+*.user
+
+# Live config (generated next to the DLL); keep config.example.json
+config.json
+
+# Python tooling cache
+__pycache__/
+.venv/

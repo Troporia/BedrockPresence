@@ -1,0 +1,7 @@
+name: BedrockPresence
+main: net.troporia.presence.PresencePlugin
+version: "1.0.0"
+api: ["3.0.0"]
+author: Troporia
+description: Discord Rich Presence for players running the BedrockPresence client DLL
+load: POSTWORLD
